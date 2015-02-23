@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+data-dojo-attach-point="${1:this}"
+]]></content>
+	<tabTrigger>attachPoint</tabTrigger>
+</snippet>
