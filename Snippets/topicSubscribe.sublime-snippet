@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+this.own(topic.subscribe('${1:Widget/Topic}', lang.hitch(this, function(${2:TopicVariable}){
+	
+})));
+]]></content>
+	<tabTrigger>topicSubscribe</tabTrigger>
+	<description>Subscribe to a dojo topic</description>
+</snippet>
