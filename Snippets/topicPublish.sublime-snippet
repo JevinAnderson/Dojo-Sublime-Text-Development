@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+topic.publish('${1:Widget/Topic}', ${2:TopicVariable});
+]]></content>
+	<tabTrigger>topicPublish</tabTrigger>
+	<description>Publish a dojo topic</description>
+</snippet>
