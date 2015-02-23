@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+${1:functionName} : function(${2:functionVariables}){
+	
+},
+]]></content>
+	<tabTrigger>makeFunc</tabTrigger>
+	<description>Creates a key/function pair for an object</description>
+</snippet>
