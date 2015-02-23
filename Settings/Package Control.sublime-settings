@@ -1,0 +1,33 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"AMD Butler",
+		"AMD-Module-Editor",
+		"BeautifyRuby",
+		"BracketHighlighter",
+		"ChangeQuotes",
+		"Color Highlighter",
+		"ColorPicker",
+		"CSS Completions",
+		"Cucumber",
+		"GitGutter",
+		"Grunt",
+		"HTMLBeautify",
+		"JavaScriptNext - ES6 Syntax",
+		"JsFormat",
+		"Package Control",
+		"PHP MySQLi connection",
+		"PHPIntel",
+		"PHPTools",
+		"RailsCasts Colour Scheme",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeServer",
+		"WakaTime"
+	]
+}
