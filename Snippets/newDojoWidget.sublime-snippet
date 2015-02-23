@@ -1,0 +1,70 @@
+<snippet>
+	<content><![CDATA[
+define([
+    'dijit/_TemplatedMixin',
+    'dijit/_WidgetBase',
+    'dijit/_WidgetsInTemplateMixin',
+
+    'dojo/_base/declare',
+    'dojo/text!./${1:widgetName}/template.html',
+
+    'xstyle/css!./${1:widgetName}/template.css' //Requires xstyle to work
+], function(
+    _TemplatedMixin,
+    _WidgetBase,
+    _WidgetsInTemplateMixin,
+
+    declare,
+    template,
+
+    css
+) {
+    return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
+        templateString: template,
+        /*
+        Your constructor method will be called before the parameters are mixed into the widget, and can be used to initialize arrays, etc.
+        */
+        constructor: function() {},
+        /*
+        If you provide a postMixInProperties method for your widget, it will be invoked before rendering occurs, and before any dom nodes are created. If you need to add or change the instance’s properties before the widget is rendered - this is the place to do it.
+        */
+        postMixInProperties: function() {
+            this.inherited(arguments);
+            //Do stuff
+        },
+        /*
+        dijit._Templated provides an implementation of buildRendering that most times will do what you need. The template is fetched/read, nodes created and events hooked up during buildRendering. The end result is assigned to this.domNode. If you don’t mixin dijit._Templated (and most OOTB dijits do) and want to handle rendering yourself (e.g. to really streamline a simple widget, or even use a different templating system) this is where you’d do it.
+        */
+        buildRendering: function() {
+            this.inherited(arguments);
+            //Do stuff
+        },
+        /*
+        This is typically the workhorse of a custom widget. The widget has been rendered (but note that child widgets in the containerNode have not!). The widget though may not be attached to the DOM yet so you shouldn’t do any sizing calculations in this method.
+        */
+        postCreate: function() {
+            this.inherited(arguments);
+            //Do stuff
+        },
+        /*
+        If you need to be sure parsing and creation of any child widgets has completed, use startup. This is often used for layout widgets like BorderContainer. If the widget does JS sizing, then startup() should call resize(), which does the sizing.
+        */
+        startup: function() {
+            this.inherited(arguments);
+            //Do stuff
+        },
+        /*
+        Implement destroy if you have special tear-down work to do (the superclasses will take care of most of it for you. Examples on how to destroy a widget:
+        */
+        destroy: function() {
+            //Do stuff
+            this.inherited(arguments);
+        }
+    });
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newWidget</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
