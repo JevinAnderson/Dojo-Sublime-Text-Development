@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+request.post('${1:url}', {
+	data: {
+		${2:dataLabel}: ${3:dataVariable}
+	},
+	handleAs: 'json'
+}).then(lang.hitch(function(response){
+	console.log('Youre request completed succesfully: ', response);
+
+}), lang.hitch(function(error){
+	console.log('There was an error with your request: ', error);
+	debugger;
+}));
+]]></content>
+	<tabTrigger>dojoRequest</tabTrigger>
+	<description>Quickly create a 'dojo/request'</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+esriRequest({
+	url: ${1:url},
+	content: {
+		f: 'json',
+		outFields: '*',
+		where: '1=1',
+		returnGeometry: true
+	},
+	handleAs: 'json',
+	callbackParamName: 'callback',
+	error: lang.hitch(this, function(error){
+		console.log('There was an error with your esri request: ', error);
+		debugger;
+	}),
+	load: lang.hitch(this, function(results){
+		console.log('Your esri request was successful: ', results);
+	})
+});
+]]></content>
+	<tabTrigger>esriRequest</tabTrigger>
+	<description>Quickly create an 'esri/request'</description>
+</snippet>
