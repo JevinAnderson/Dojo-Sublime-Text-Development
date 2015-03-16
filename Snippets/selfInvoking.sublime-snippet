@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+${3:var selfInvokedFunction = }(function(${1:initializationVariable}){
+	return function(){
+		//Do something with initializing value
+	};
+}(${2:initializationValue}));
+]]></content>
+	<tabTrigger>selfInvokingFunction</tabTrigger>
+	<description>Creates a self invoked javascript function with an initialization variable</description>
+</snippet>
